@@ -1,0 +1,3 @@
+xclip -selection clipboard -t image/png -o > tmp.png
+tesseract --psm 4 tmp.png tmp
+xclip -selection clipboard < tmp.txt
